@@ -218,10 +218,13 @@ app.post("/api/chat", async (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`=======================================================`);
-  console.log(`🚀 AI SPORT X Server: http://localhost:${PORT}`);
-  console.log(`🟢 Groq Live Cloud AI: INTEGRATED & READY`);
-  console.log(`📸 AI Image Generation: ACTIVATED`);
-  console.log(`=======================================================`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`=======================================================`);
+    console.log(`🚀 AI SPORT X Server: http://localhost:${PORT}`);
+    console.log(`🟢 Groq Live Cloud AI: INTEGRATED & READY`);
+    console.log(`📸 AI Image Generation: ACTIVATED`);
+    console.log(`=======================================================`);
+  });
+}
+module.exports = app;
