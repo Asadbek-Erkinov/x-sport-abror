@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "routes": [
+    { "src": "/api/chat", "dest": "/chat.js" },
+    { "src": "/api/health", "dest": "/health.js" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}

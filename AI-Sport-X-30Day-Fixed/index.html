@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Sport X | Sport uchun aqlli yordamchi</title>
+  <link rel="stylesheet" href="sport.css">
+  <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+  <div class="site-shell">
+    <aside class="app-sidebar">
+      <a class="brand" href="index.html">
+        <img src="assets/ai-sport-x-logo.svg" alt="AI Sport X" class="sidebar-logo">
+      </a>
+
+      
+
+      <nav class="main-nav" aria-label="Asosiy navigatsiya">
+        <button class="nav-link active" data-view="home"><span>01</span> Bosh sahifa</button>
+        <button class="nav-link" data-view="ai"><span>02</span> AI murabbiy</button>
+        <a class="nav-link sport-link" href="sport.html"><span>03</span> 30 kunlik reja</a>
+        <a class="nav-link sport-link" href="matches.html"><span>04</span> Sport markazi</a>
+      </nav>
+
+      <div class="sidebar-note">
+        <span class="live-dot"></span>
+        <div><strong>Sport rejimi</strong><small>AI 100% aktiv</small></div>
+      </div>
+      <button class="theme-btn" id="themeBtn" title="Temani almashtirish"><span class="theme-icon">☀</span><span>Ko‘rinish</span></button style ="display: none;" "width: 0px; height: 0px;">
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <a class="mobile-brand" href="index.html">
+          <img src="assets/ai-sport-x-logo.svg" alt="AI Sport X" class="mobile-logo">
+        </a>
+        <div class="breadcrumb" id="breadcrumb">BOSH SAHIFA <span>/</span> UMUMIY</div>
+        <nav class="top-nav" aria-label="Header navigatsiyasi">
+          <button class="top-nav-link active" data-view="home">Bosh sahifa</button>
+          <button class="top-nav-link" data-view="ai">AI murabbiy</button>
+          <a class="top-nav-link" href="sport.html">30 kunlik reja</a>
+          <a class="top-nav-link" href="matches.html">Sport markazi</a>
+        </nav>
+        <button class="theme-btn top-theme-btn" id="themeBtnTop" title="Rejimni almashtirish"><span class="theme-icon">☀</span></button >
+        <div class="profile-slot" id="profileSlot"></div>
+        <button class="mobile-menu" id="mobileMenu" aria-label="Menyuni ochish">☰</button>
+      </header>
+
+      <section class="view active" id="homeView">
+        <div class="hero-block">
+          <div class="hero-copy">
+            <p class="eyebrow">SPORTNI YANGI BOSQICHGA OLIB CHIQ</p>
+            <h1>Bugungi harakat.<br><em>Ertangi natija.</em></h1>
+            <p class="hero-text">AI Sport X mashg‘ulot, ovqatlanish, motivatsiya va sport bo'yicha aqlli yordamchingiz.</p>
+            <button class="primary-btn" data-view="ai">AI bilan boshlash <span>↗</span></button>
+          </div>
+          <div class="hero-score">
+            <div class="score-ring"><strong>98%</strong><span>FORM</span></div>
+            <div><span class="score-label">AI TIZIMI HOLATI</span><strong class="score-up">100% ONLINE <small>↑</small></strong><p>Uzluksiz xatosiz rejim</p></div>
+          </div>
+        </div>
+
+        <div class="section-heading"><div><p class="eyebrow">SIZ UCHUN TANLANDI</p><h2>Qaysi yo‘nalishda yordam kerak?</h2></div><span class="heading-line"></span></div>
+        <div class="feature-grid">
+          <button class="feature-card feature-main" data-prompt="Menga bugun uchun samarali mashg‘ulot rejasini tuzib ber">
+            <span class="card-icon">🏋️</span><span class="card-number">01</span><h3>Mashg‘ulot<br>rejasi</h3><p>Maqsadingizga mos shaxsiy plan</p><span class="card-arrow">→</span>
+          </button>
+          <button class="feature-card feature-dark" data-prompt="Menga sog‘lom va oson ovqatlanish rejasini tuzib ber">
+            <span class="card-icon">🥗</span><span class="card-number">02</span><h3>Ovqatlanish<br>maslahati</h3><p>Kuch uchun to‘g‘ri yoqilg‘i</p><span class="card-arrow">→</span>
+          </button>
+          <button class="feature-card feature-light" data-prompt="Cristiano Ronaldo va Lionel Messi yutuqlarini aytib ber">
+            <span class="card-icon">⚽</span><span class="card-number">03</span><h3>Sport<br>Yulduzlari</h3><p>Mashhurlar natijalari va sirlari</p><span class="card-arrow">→</span>
+          </button>
+        </div>
+
+        <div class="stats-strip"><div><strong>24/7</strong><span>AI YORDAM</span></div><div><strong>+120</strong><span>SPORT MAVZULARI</span></div><div><strong>100%</strong><span>UZLUKSIZ ISHLASH</span></div><div class="quote">“Natija tasodif emas. U har kungi tanlov va aqlli mashg'ulot.”</div></div>
+
+        <div class="visual-gallery">
+          <div class="gallery-heading"><div><p class="eyebrow">HARAKATDAN ILHOM OLING</p><h2>Bugun tanangiz uchun vaqt ajrating</h2></div><span class="heading-line"></span></div>
+          <div class="gallery-grid">
+            <figure class="gallery-card gallery-card-wide"><img src="assets/workout.svg" alt="Sport zalida mashg‘ulot qilayotgan sportchi"><figcaption><strong>POWER SESSION</strong><span>Kuch va texnika</span></figcaption></figure>
+            <figure class="gallery-card"><img src="assets/football.svg" alt="Futbol maydonidagi to‘p"><figcaption><strong>PLAY STRONG</strong><span>Jamoa ruhi</span></figcaption></figure>
+            <figure class="gallery-card"><img src="assets/running.svg" alt="Yugurish mashg‘uloti"><figcaption><strong>KEEP MOVING</strong><span>Har kuni harakat</span></figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="view ai-view" id="aiView">
+        <div class="ai-intro">
+          <div>
+            <p class="eyebrow">AI SPORT SHAXSIY MURABBIY</p>
+            <h1>Savolingizni bering.<br><em>Aniq va professional javob beraman.</em></h1>
+          </div>
+          <div class="ai-status"><span class="live-dot"></span> AI 100% AKTIV</div>
+        </div>
+
+        <div class="chat-window">
+          <div id="messages" class="messages">
+            <div class="welcome">
+              <div class="robot">SX</div>
+              <div>
+                <strong>Salom, sportchi!</strong>
+                <p>Maqsadingiz nima? Mashg‘ulot, ovqatlanish, motivatsiya yoki sportchilar haqida aniq ma'lumot so'rashingiz mumkin!</p>
+              </div>
+            </div>
+          </div>
+          <div class="typing" id="typing">AI o'ylamoqda va aniq javob tayyorlamoqda...</div>
+          <form id="chatForm" class="input-area">
+            <textarea id="userInput" placeholder="Masalan: bugun oyoq mashg'uloti rejasini ber yoki 'Kreatin ta'siri haqida ayt'..." rows="1"></textarea>
+            <button type="submit" id="sendBtn" aria-label="Yuborish">↗</button>
+          </form>
+        </div>
+
+        <div class="prompt-row">
+          <span>TEZKOR PROMPTLAR:</span>
+          <button class="prompt-chip" data-prompt="Menga yangi boshlovchilar uchun mashg‘ulot rejasini ber">🏋️ Mashq rejasi</button>
+          <button class="prompt-chip" data-prompt="Menga bugungi mashg‘ulotdan oldin nima yeyishni ayt">🥗 Ovqatlanish</button>
+          <button class="prompt-chip" data-prompt="Kreatin va oqsil qo'shimchalari ta'siri haqida aytib ber">💊 Sport qo'shimchalari</button>
+          <button class="prompt-chip" data-prompt="Cristiano Ronaldo intizom siri nima?">⚽ CR7 Intizomi</button>
+          <button class="prompt-chip" data-prompt="Menga qisqa motivatsiya ber">⚡ Motivatsiya</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="human-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span>SX</span>
+          <div><strong>AI SPORT X</strong><small>YOUR EDGE, EVERY DAY</small></div>
+        </div>
+        <p>Sport, mashg‘ulot, ovqatlanish va AI rasm yaratish uchun aqlli raqamli yordamchi.</p>
+        <div class="footer-status"><span class="live-dot"></span> TIZIM 100% ISHLAYAPTI</div>
+      </div>
+
+      <div class="footer-column">
+        <h4>SAHIFALAR</h4>
+        <a href="index.html">Bosh sahifa</a>
+        <a href="index.html#ai">AI murabbiy</a>
+        <a href="sport.html">30 kunlik reja</a>
+        <a href="matches.html">Sport markazi</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>AI MURABBIY</h4>
+        <a href="index.html#ai">Mashg‘ulot</a>
+        <a href="index.html#ai">Ovqatlanish</a>
+        <a href="index.html#ai">Motivatsiya</a>
+        <a href="index.html#ai">AI Rasm Yaratish</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>SPORT</h4>
+        <a href="sport.html">Reja</a>
+        <a href="matches.html">Natijalar</a>
+        <a href="matches.html">Sport markazi</a>
+        <a href="matches.html">Statistika</a>
+      </div>
+    </div>
+
+    <div class="footer-middle">
+      <div class="footer-stat"><strong>24/7</strong><span>AI YORDAM</span></div>
+      <div class="footer-stat"><strong>30</strong><span>KUNLIK REJA</span></div>
+      <div class="footer-stat"><strong>100%</strong><span>ERROR-FREE AI</span></div>
+      <div class="footer-stat"><strong>01</strong><span>SIZNING MAQSADINGIZ</span></div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 AI SPORT X</div>
+      <div class="footer-bottom-links">
+        <a href="index.html">Bosh sahifa</a>
+        <a href="sport.html">Reja</a>
+        <a href="matches.html">Sport markazi</a>
+      </div>
+      <div class="footer-made">SPORT · AI · PROGRESS</div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=2.2"></script>
+</body>
+</html>

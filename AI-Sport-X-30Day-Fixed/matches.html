@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Sport X | Sport markazi</title>
+  <link rel="stylesheet" href="sport.css?v=2.2">
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="app-sidebar">
+      <a class="brand" href="index.html">
+        <img src="assets/ai-sport-x-logo.svg" alt="AI Sport X" class="sidebar-logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Asosiy navigatsiya">
+        <a class="nav-link" href="index.html"><span>01</span> Bosh sahifa</a>
+        <a class="nav-link" href="index.html#ai"><span>02</span> AI murabbiy</a>
+        <a class="nav-link" href="sport.html"><span>03</span> 30 kunlik reja</a>
+        <a class="nav-link active" href="matches.html"><span>04</span> Sport markazi</a>
+      </nav>
+
+      <div class="sidebar-note">
+        <span class="live-dot"></span>
+        <div><strong>Sport rejimi</strong><small>Har kuni yaxshiroq</small></div>
+      </div>
+
+      <button class="theme-btn" id="themeBtn" title="Temani almashtirish">
+        <span class="theme-icon">☀</span><span>Ko‘rinish</span>
+      </button>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <a class="mobile-brand" href="index.html">
+          <img src="assets/ai-sport-x-logo.svg" alt="AI Sport X" class="mobile-logo">
+        </a>
+        <div class="breadcrumb">SPORT MARKAZI <span>/</span> SCOREBOARD</div>
+        <nav class="top-nav" aria-label="Header navigatsiyasi">
+          <a class="top-nav-link" href="index.html">Bosh sahifa</a>
+          <a class="top-nav-link" href="index.html#ai">AI murabbiy</a>
+          <a class="top-nav-link" href="sport.html">30 kunlik reja</a>
+          <a class="top-nav-link active" href="matches.html">Sport markazi</a>
+        </nav>
+        <button class="theme-btn top-theme-btn" id="themeBtnTop" title="Rejimni almashtirish"><span class="theme-icon">☀</span></button>
+        <div class="profile-slot" id="profileSlot"></div>
+        <button class="mobile-menu" id="mobileMenu" aria-label="Menyuni ochish">☰</button>
+      </header>
+
+      <section class="matches-view sports-center-page">
+        <div class="sports-center-hero">
+          <div class="sports-center-copy">
+            <p class="eyebrow">SPORT MARKAZI · 2025/26</p>
+            <h1>REAL SCORE.<br><em>REAL SPORT.</em></h1>
+            <p class="hero-text">Tasdiqlangan futbol natijalari, ligalar jadvali va ochkolar. Har bir liga o‘z jadvaliga ega.</p>
+            <div class="data-source-row"><span class="live-dot"></span><strong>VERIFIED RESULTS</strong><span>UEFA · Premier League · LALIGA · Bundesliga</span></div>
+          </div>
+          <div class="sports-center-visual"><img src="assets/stadium.svg" alt="Sport stadioni illustratsiyasi"></div>
+        </div>
+
+        <div class="sport-tabs" role="tablist">
+          <button class="sport-tab active" data-sport="all">Barchasi</button>
+          <button class="sport-tab" data-sport="football">⚽ Futbol</button>
+          <button class="sport-tab" data-sport="basketball">🏀 Basketbol</button>
+          <button class="sport-tab" data-sport="tennis">🎾 Tennis</button>
+        </div>
+
+        <div class="match-layout sports-grid">
+          <div>
+            <div class="section-heading compact">
+              <div><p class="eyebrow">TASDIQLANGAN NATIJALAR</p><h2>So‘nggi o‘yinlar</h2></div><span class="heading-line"></span>
+            </div>
+            <div id="matchList" class="match-list real-match-list"></div>
+          </div>
+
+          <aside class="leader-card standings-panel">
+            <div class="standings-panel-head">
+              <div><p class="eyebrow">LIGA JADVALI</p><h2 id="standingsTitle">Premier League</h2></div>
+              <span id="standingsSeason">2025/26</span>
+            </div>
+            <div class="league-tabs">
+              <button class="league-tab active" data-league="pl">PL</button>
+              <button class="league-tab" data-league="laliga">LALIGA</button>
+              <button class="league-tab" data-league="bundesliga">BL</button>
+              <button class="league-tab" data-league="ucl">UCL</button>
+            </div>
+            <div id="standingsList" class="standings-list"></div>
+            <p class="standings-note">Ochkolar rasmiy 2025/26 jadvalidan. Qo‘shilgan natija bo‘lsa, shu jadvalda lokal hisob ham avtomatik yangilanadi.</p>
+          </aside>
+        </div>
+
+        <div class="result-editor">
+          <div>
+            <p class="eyebrow">LIVE UPDATE</p>
+            <h2>Natijani qo‘shish</h2>
+            <p>O‘zingiz qo‘shgan natija ochkolar jadvaliga avtomatik hisoblanadi va brauzerda saqlanadi.</p>
+          </div>
+          <form id="resultForm">
+            <select id="resultLeague" aria-label="Liga">
+              <option value="pl">Premier League</option>
+              <option value="laliga">LALIGA</option>
+              <option value="bundesliga">Bundesliga</option>
+              <option value="ucl">Champions League</option>
+            </select>
+            <input id="resultHome" placeholder="Uy jamoa" required>
+            <input id="resultAway" placeholder="Mehmon jamoa" required>
+            <input id="resultHomeScore" type="number" min="0" placeholder="0" required>
+            <span class="result-separator">—</span>
+            <input id="resultAwayScore" type="number" min="0" placeholder="0" required>
+            <button type="submit">Hisoblash +</button>
+          </form>
+          <button id="clearLocalResults" class="clear-results" type="button">Qo‘shilgan natijalarni tozalash</button>
+        </div>
+
+        <div id="resultNotice" class="scoreboard-note verified-note">
+          <strong>REAL MA’LUMOT</strong>
+          <span>2025/26 mavsumining rasmiy natijalari va yakuniy jadvallaridan foydalanildi. UCL finali: PSG 1–1 Arsenal, penaltilar 4–3.</span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="human-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span>SX</span>
+          <div><strong>AI SPORT X</strong><small>YOUR EDGE, EVERY DAY</small></div>
+        </div>
+        <p>Sport, mashg'ulot va rivojlanish uchun aqlli raqamli yordamchi.</p>
+        <div class="footer-status"><span class="live-dot"></span> TIZIM ISHLAYAPTI</div>
+      </div>
+
+      <div class="footer-column">
+        <h4>SAHIFALAR</h4>
+        <a href="index.html">Bosh sahifa</a>
+        <a href="index.html#ai">AI murabbiy</a>
+        <a href="sport.html">30 kunlik reja</a>
+        <a href="matches.html">Sport markazi</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>AI MURABBIY</h4>
+        <a href="index.html#ai">Mashg'ulot</a>
+        <a href="index.html#ai">Ovqatlanish</a>
+        <a href="index.html#ai">Motivatsiya</a>
+        <a href="index.html#ai">Maslahatlar</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>SPORT</h4>
+        <a href="sport.html">Reja</a>
+        <a href="matches.html">Natijalar</a>
+        <a href="matches.html">Sport markazi</a>
+        <a href="matches.html">Statistika</a>
+      </div>
+    </div>
+
+    <div class="footer-middle">
+      <div class="footer-stat"><strong>24/7</strong><span>AI YORDAM</span></div>
+      <div class="footer-stat"><strong>30</strong><span>KUNLIK REJA</span></div>
+      <div class="footer-stat"><strong>+120</strong><span>SPORT MAVZULARI</span></div>
+      <div class="footer-stat"><strong>01</strong><span>SIZNING MAQSADINGIZ</span></div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 AI SPORT X</div>
+      <div class="footer-bottom-links">
+        <a href="index.html">Bosh sahifa</a>
+        <a href="sport.html">Reja</a>
+        <a href="matches.html">Sport markazi</a>
+      </div>
+      <div class="footer-made">SPORT · AI · PROGRESS</div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=2.2"></script>
+  <script src="matches.js?v=2.2"></script>
+</body>
+</html>

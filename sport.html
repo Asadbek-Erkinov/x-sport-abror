@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Sport X | 30 kunlik reja</title>
+  <link rel="stylesheet" href="sport.css?v=2.2">
+</head>
+<body class="plan-page">
+  <div class="site-shell">
+    <aside class="app-sidebar">
+      <a class="brand" href="index.html">
+        <img src="assets/ai-sport-x-logo.svg" alt="AI Sport X" class="sidebar-logo">
+      </a>
+      <nav class="main-nav" aria-label="Asosiy navigatsiya">
+        <a class="nav-link" href="index.html"><span>01</span> Bosh sahifa</a>
+        <a class="nav-link" href="index.html#ai"><span>02</span> AI murabbiy</a>
+        <a class="nav-link active" href="sport.html"><span>03</span> 30 kunlik reja</a>
+        <a class="nav-link" href="matches.html"><span>04</span> Sport markazi</a>
+      </nav>
+      <div class="sidebar-note"><span class="live-dot"></span><div><strong>Sport rejimi</strong><small>Har kuni yaxshiroq</small></div></div>
+      <button class="theme-btn" id="themeBtn" title="Rejimni almashtirish"><span class="theme-icon">☀</span><span class="theme-text">Kungi mode</span></button>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <a class="mobile-brand" href="index.html">
+          <img src="assets/ai-sport-x-logo.svg" alt="AI Sport X" class="mobile-logo">
+        </a>
+        <div class="breadcrumb">30 KUNLIK REJA <span>/</span> PROGRAMMA</div>
+        <nav class="top-nav" aria-label="Header navigatsiyasi">
+          <a class="top-nav-link" href="index.html">Bosh sahifa</a>
+          <a class="top-nav-link" href="index.html#ai">AI murabbiy</a>
+          <a class="top-nav-link active" href="sport.html">30 kunlik reja</a>
+          <a class="top-nav-link" href="matches.html">Sport markazi</a>
+        </nav>
+        <button class="theme-btn top-theme-btn" id="themeBtnTop" title="Rejimni almashtirish"><span class="theme-icon">☀</span></button>
+        <div class="profile-slot" id="profileSlot"></div>
+        <button class="mobile-menu" id="mobileMenu" aria-label="Menyuni ochish">☰</button>
+      </header>
+
+      <section class="plan-view">
+        <div class="plan-heading">
+          <div>
+            <p class="eyebrow">SIZNING 30 KUNLIK STARTINGIZ</p>
+            <h1>Har kun.<br><em>Yangi kuch.</em></h1>
+            <p class="hero-text">Bugungi mashq va ovqatlanish rejasini bajaring hamda belgilang. Kichik qadamlar katta natijaga olib boradi.</p>
+          </div>
+          <div class="plan-badge">
+            <strong>30</strong>
+            <span>KUNLIK<br>PROGRAMMA</span>
+          </div>
+        </div>
+
+        <!-- 30-Day Progress Bar -->
+        <div class="progress-card">
+          <div class="progress-head">
+            <div>
+              <span class="eyebrow">UMUMIY PROGRESS</span>
+              <h3><span id="completedCount">0</span> / 30 kun bajarildi</h3>
+            </div>
+            <strong id="progressPercent" class="progress-percent">0%</strong>
+          </div>
+          <div class="progress-track">
+            <div id="progressBarFill" class="progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <!-- Week Filter Tabs -->
+        <div class="week-filter-tabs" role="tablist">
+          <button class="week-tab active" data-week="all">Barchasi (1-30)</button>
+          <button class="week-tab" data-week="1">1-Hafta (1-7)</button>
+          <button class="week-tab" data-week="2">2-Hafta (8-14)</button>
+          <button class="week-tab" data-week="3">3-Hafta (15-21)</button>
+          <button class="week-tab" data-week="4">4-Hafta (22-30)</button>
+        </div>
+
+        <div class="day-picker">
+          <div class="picker-label">KUNNI TANLANG (BAJARILGAN KUNLARDA YASHIL NUQTA)</div>
+          <div id="dayButtons" class="day-buttons"></div>
+        </div>
+
+        <div class="day-summary">
+          <div>
+            <p class="eyebrow" id="dayPhaseText">1-HAFTA · ADAPTATSIYA</p>
+            <h2 id="dayTitle">1-kun: Boshlanish va Adaptatsiya</h2>
+            <p id="dayFocus" class="day-focus">Tanangizni harakatga va toza ovqatlanishga tayyorlaymiz.</p>
+          </div>
+          <div class="day-summary-actions">
+            <span id="dayTag" class="day-tag">START</span>
+            <button id="markCompleteBtn" class="mark-complete-btn" type="button">
+              <span class="check-icon">✓</span>
+              <span id="completeBtnText">Kunni bajarildi deb belgilash</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="plan-grid">
+          <article class="plan-card meal-card">
+            <div class="plan-card-top">
+              <span class="plan-icon">🥗</span>
+              <span>01 / OVQATLANISH MENYUSI</span>
+            </div>
+            <h3 id="mealTitle">Yengil va toza start</h3>
+            <ul id="mealList"></ul>
+          </article>
+
+          <article class="plan-card workout-card">
+            <div class="plan-card-top">
+              <span class="plan-icon">🏋️</span>
+              <span>02 / MASHG‘ULOT REJASI</span>
+            </div>
+            <h3 id="workoutTitle">Butun tana faolligi</h3>
+            <ul id="workoutList"></ul>
+          </article>
+        </div>
+
+        <div class="plan-footer">
+          <span>AI SPORT X</span>
+          <p>Bugun boshlang. Har kuni 1% yaxshiroq bo'lsangiz, 30 kunda butkul yangi natijaga erishasiz.</p>
+          <a href="index.html">← Bosh sahifaga qaytish</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="human-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span>SX</span>
+          <div><strong>AI SPORT X</strong><small>YOUR EDGE, EVERY DAY</small></div>
+        </div>
+        <p>Sport, mashg'ulot va rivojlanish uchun aqlli raqamli yordamchi.</p>
+        <div class="footer-status"><span class="live-dot"></span> TIZIM ISHLAYAPTI</div>
+      </div>
+
+      <div class="footer-column">
+        <h4>SAHIFALAR</h4>
+        <a href="index.html">Bosh sahifa</a>
+        <a href="index.html#ai">AI murabbiy</a>
+        <a href="sport.html">30 kunlik reja</a>
+        <a href="matches.html">Sport markazi</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>AI MURABBIY</h4>
+        <a href="index.html#ai">Mashg'ulot</a>
+        <a href="index.html#ai">Ovqatlanish</a>
+        <a href="index.html#ai">Motivatsiya</a>
+        <a href="index.html#ai">Maslahatlar</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>SPORT</h4>
+        <a href="sport.html">Reja</a>
+        <a href="matches.html">Natijalar</a>
+        <a href="matches.html">Sport markazi</a>
+        <a href="matches.html">Statistika</a>
+      </div>
+    </div>
+
+    <div class="footer-middle">
+      <div class="footer-stat"><strong>24/7</strong><span>AI YORDAM</span></div>
+      <div class="footer-stat"><strong>30</strong><span>KUNLIK REJA</span></div>
+      <div class="footer-stat"><strong>+120</strong><span>SPORT MAVZULARI</span></div>
+      <div class="footer-stat"><strong>01</strong><span>SIZNING MAQSADINGIZ</span></div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 AI SPORT X</div>
+      <div class="footer-bottom-links">
+        <a href="index.html">Bosh sahifa</a>
+        <a href="sport.html">Reja</a>
+        <a href="matches.html">Sport markazi</a>
+      </div>
+      <div class="footer-made">SPORT · AI · PROGRESS</div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=2.2"></script>
+  <script src="sport-plan.js?v=2.2"></script>
+</body>
+</html>

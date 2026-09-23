@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 620">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#123f56"/><stop offset="1" stop-color="#16855a"/></linearGradient></defs>
+<rect width="700" height="620" fill="url(#g)"/><path d="M0 475Q175 390 350 450t350-10v180H0Z" fill="#062d2c"/><path d="M0 445Q175 370 350 425t350-12" fill="none" stroke="#a9e85b" stroke-width="4" opacity=".7"/><circle cx="500" cy="205" r="110" fill="#fff" opacity=".08"/><path d="M350 140l96 70-37 114H291l-37-114Z" fill="#f4fbff" stroke="#42c7ff" stroke-width="8"/><path d="M350 140v-55M446 210l52-35M409 324l35 52M291 324l-35 52M254 210l-52-35" stroke="#f4fbff" stroke-width="8" stroke-linecap="round"/>
+<text x="42" y="560" fill="#fff" font-family="Arial,sans-serif" font-size="46" font-weight="800" letter-spacing="5">PLAY STRONG</text>
+</svg>

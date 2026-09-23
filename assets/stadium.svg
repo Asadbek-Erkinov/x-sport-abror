@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10223b"/><stop offset="1" stop-color="#1769e0"/></linearGradient></defs>
+  <rect width="1200" height="420" fill="url(#g)"/>
+  <circle cx="980" cy="85" r="150" fill="#fff" opacity=".07"/>
+  <circle cx="180" cy="80" r="110" fill="#fff" opacity=".05"/>
+  <g fill="#fff" opacity=".12"><rect x="110" y="65" width="12" height="160"/><rect x="1078" y="65" width="12" height="160"/></g>
+  <path d="M0 335 Q300 240 600 300 T1200 260 V420H0Z" fill="#081423" opacity=".8"/>
+  <path d="M120 330 Q600 220 1080 330" fill="none" stroke="#6fa9ff" stroke-width="5" opacity=".6"/>
+  <path d="M260 350 Q600 265 940 350" fill="none" stroke="#fff" stroke-width="2" opacity=".25"/>
+  <text x="600" y="205" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="54" font-weight="800" letter-spacing="7">SPORT CENTER</text>
+  <text x="600" y="246" text-anchor="middle" fill="#b9d5ff" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="4">RESULTS · STANDINGS · FORM</text>
+</svg>
